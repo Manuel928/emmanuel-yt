@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,8 @@
 <body class="">
     <header>
         <div class="bg-[rgb(245,239,232)]">
-            <nav class="flex justify-between items-center border-b-1 p-8">
-                <div class="logo">ML.</div>
+            <nav class="flex sticky top-0 z-50 backdrop-blur-md justify-between items-center border-b-1 p-6 md:p-8">
+                <div class="">ML.</div>
                 <ul class="flex gap-5 text-sm md:text-[16px]">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Videos</a></li>
@@ -34,7 +34,7 @@
                         eveniet natus dicta quos.</p>
                     <div>
                         <a href="#"
-                            class="bg-black text-white px-4 py-3 rounded-bl-3xl rounded-tr-3xl hover:duration-200">Subscribe
+                            class="bg-black text-white px-4 py-3 rounded-bl-3xl rounded-tr-3xl hover:bg-white hover:text-black hover:border duration-500 hover:duration-200">Subscribe
                             now</a>
 
                     </div>
@@ -131,7 +131,7 @@
     <!-- WHY US? -->
     <section>
         <div class="mt-16">
-            <div class="flex md: gap-[20px] md:p-[30px]">
+            <div class="flex md:gap-[20px] md:p-[30px] p-[20px]">
                 <div class="left-heading">
                     <h1 class="hidden md:block uppercase tracking-[0.8rem] font-semibold"
                         style="writing-mode: vertical-rl;">Why
@@ -239,7 +239,9 @@
             <div class="bg-[rgb(245,239,232)] h-[200px] flex flex-col gap-[10px] items-center justify-center">
                 <h2 class="font-semibold text-lg md:text-2xl">Do you have any questions?</h2>
                 <p class="text-sm">Feel free to reach out to us</p>
-                <a href="#" class="text-sm bg-black text-white px-4 py-3 rounded-bl-3xl rounded-tr-3xl">Ask your
+                <a href="#"
+                    class="text-sm bg-black text-white px-4 py-3 hover:bg-white hover:text-black hover:border duration-500 rounded-bl-3xl rounded-tr-3xl">Ask
+                    your
                     questions</a>
             </div>
         </div>
@@ -247,7 +249,7 @@
 
 
     <!-- FEATURED PROJECTS -->
-    <section>
+    <section id="projects">
         <div class="mt-16">
             <div class="flex flex-col justify-center items-center space-y-4">
                 <h1 class="text-2xl font-semibold">Featured Projects</h1>
@@ -275,7 +277,9 @@
                     </a>
 
                 </div>
-                <a href="#" class="bg-black px-4 py-3 rounded-bl-3xl rounded-tr-3xl text-white">View more work</a>
+                <a href="#"
+                    class="bg-black px-4 py-3 rounded-bl-3xl rounded-tr-3xl text-white hover:bg-white hover:text-black hover:border duration-500">View
+                    more work</a>
             </div>
         </div>
     </section>
@@ -283,53 +287,62 @@
 
     <!-- TESTIMONIALS -->
     <section>
-        <div class="section-wrapper">
-            <div class="testimonial">
-                <div class="testimonial-head">
-                    <h2>Testimonials</h2>
-                    <div class="divider"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, deserunt!</p>
+        <div class="mt-16">
+            <div class="flex flex-col justify-center items-center space-y-4">
+                <div class="flex flex-col items-center space-y-2">
+                    <div>
+                        <h2 class="text-2xl font-semibold">Testimonials</h2>
+                        <div class="bg-[rgb(167,98,19)] h-1 w-32"></div>
+                    </div>
+                    <p class="text-sm max-w-sm text-center md:max-w-md">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ad, deserunt!</p>
                 </div>
-                <div class="testimonial-cards">
-                    <div class="testimonial-1">
+                <div class="grid md:grid-cols-3 md:gap-0 gap-4">
+                    <div
+                        class="relative px-[40px] py-[40px] flex flex-col justify-center items-center md:items-start space-y-6 bg-[rgb(245,239,232)] mx-4 rounded-lg shadow-md">
                         <q>
-                            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias rerum tenetur
+                            <i class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias
+                                rerum tenetur
                                 nostrum numquam quia esse officiis eum facere cum commodi architecto officia, ab
                                 doloremque?</i>
                         </q>
-                        <div class="testimonial-footer">
-                            <img src="./images/emmanuel.jpg" alt="" srcset="">
-                            <div class="client-details">
-                                <h5>Elon Musk</h5>
-                                <p>CEO. X</p>
+                        <div class="absolute flex items-center gap-2 bottom-3">
+                            <img src="./images/emmanuel.jpg" class="w-9 rounded-full" alt="" srcset="">
+                            <div class="flex flex-col">
+                                <h5 class="font-semibold text-xs">Elon Musk</h5>
+                                <p class="text-xs">CEO. X</p>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-1">
+                    <div
+                        class="relative px-[40px] py-[40px] flex flex-col justify-center items-center md:items-start space-y-6 bg-[rgb(245,239,232)] mx-4 rounded-lg shadow-md">
                         <q>
-                            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias rerum tenetur
+                            <i class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias
+                                rerum tenetur
                                 nostrum numquam quia esse officiis eum facere cum commodi architecto officia, ab
                                 doloremque?</i>
                         </q>
-                        <div class="testimonial-footer">
-                            <img src="./images/emmanuel.jpg" alt="" srcset="">
-                            <div class="client-details">
-                                <h5>Elon Musk</h5>
-                                <p>CEO. X</p>
+                        <div class="absolute flex items-center gap-2 bottom-3">
+                            <img src="./images/emmanuel.jpg" class="w-9 rounded-full" alt="" srcset="">
+                            <div class="flex flex-col">
+                                <h5 class="font-semibold text-xs">Elon Musk</h5>
+                                <p class="text-xs">CEO. X</p>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-1">
+                    <div
+                        class="relative px-[40px] py-[40px] flex flex-col justify-center items-center md:items-start space-y-6 bg-[rgb(245,239,232)] mx-4 rounded-lg shadow-md">
                         <q>
-                            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias rerum tenetur
+                            <i class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias
+                                rerum tenetur
                                 nostrum numquam quia esse officiis eum facere cum commodi architecto officia, ab
                                 doloremque?</i>
                         </q>
-                        <div class="testimonial-footer">
-                            <img src="./images/emmanuel.jpg" alt="" srcset="">
-                            <div class="client-details">
-                                <h5>Elon Musk</h5>
-                                <p>CEO. X</p>
+                        <div class="absolute flex items-center gap-2 bottom-3">
+                            <img src="./images/emmanuel.jpg" class="w-9 rounded-full" alt="" srcset="">
+                            <div class="flex flex-col">
+                                <h5 class="font-semibold text-xs">Elon Musk</h5>
+                                <p class="text-xs">CEO. X</p>
                             </div>
                         </div>
                     </div>
@@ -337,6 +350,100 @@
             </div>
         </div>
     </section>
+
+    <!-- Form -->
+    <section class="mt-16">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-center text-black dark:text-white">
+                Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 text-sm md:text-md">Got
+                a new project in mind? Send us a message today. Let's get you started</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm focus:outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@email.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject"
+                        class="block focus:outline-none p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block focus:outline-none p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Hi, I would like to get started with..."></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black rounded-bl-3xl rounded-tr-3xl cursor-pointer hover:bg-white hover:text-black hover:border duration-500 focus:ring-4 focus:outline-none dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-96 mt-16">
+        <div class="flex flex-col p-[40px]">
+            <div class="text-3xl font-semibold">ML.</div>
+
+            <!--Links -->
+            <div class="grid md:grid-cols-3 items-center gap-4 my-12">
+                <div class="flex flex-col gap-4">
+                    <div class="text-sm">
+                        Tel: <a href="#" class="hover:border-b-2 pb-2 duration-200">+234 8102969846</a>
+                    </div>
+                    <div class="text-sm">
+                        Email: <a href="mailto:afrikareportersng@gmail.com"
+                            class="hover:border-b-2 pb-2 duration-200">afrikareportersng@gmail.com</a>
+                    </div>
+                    <!-- <div>
+                        <a href="#" class="hover:border-b-2 pb-2 duration-200">Youtube Channel</a>
+                    </div> -->
+                </div>
+
+                <div class="flex flex-col gap-4 mt-8 md:mt-0">
+                    <h3 class="font-semibold text-lg underline">Quick Links</h3>
+                    <div class="text-sm">
+                        <a href="#" class="hover:border-b-2 pb-2 duration-200">Home</a>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="hover:border-b-2 pb-2 duration-200">Vlog</a>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#projects" class="hover:border-b-2 pb-2 duration-200">Projects</a>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="hover:border-b-2 pb-2 duration-200">Youtube Channel</a>
+                    </div>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <div class="flex items-center space-x-3 mt-4">
+                        <h3 class="text-sm">Follow</h3>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Copyright -->
+            <div class="max-w-xl flex flex-col items-center mx-auto py-4 text-sm text-gray-500">
+                <p>&copy; 2025 Manuelonics. All rights reserved.</p>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
