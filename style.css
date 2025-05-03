@@ -1,3 +1,5 @@
+
+
 @keyframes typing {
     0% { width: 0 }
     50% { width: 100% }
@@ -18,3 +20,14 @@
     max-width: max-content; /* ensures it doesn't stretch */
   }
   
+@theme {
+  --font-
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
